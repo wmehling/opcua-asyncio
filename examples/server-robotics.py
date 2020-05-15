@@ -17,10 +17,8 @@ async def main():
     server = Server()
     await server.init()
     # import some nodes from xml
-    #await server.import_xml("schemas/UA-Nodeset/Schema/Opc.Ua.NodeSet2.xml")
-    await server.import_xml("/home/willy/Repos/opcua-asyncio/schemas/UA-Nodeset/DI/Opc.Ua.Di.NodeSet2.xml")
-    
-    #await server.import_xml("schemas/UA-Nodeset/Robotics/Opc.Ua.Robotics.NodeSet2.xml")
+    await server.import_xml("schemas/UA-Nodeset/Schema/Opc.Ua.NodeSet2.xml")
+    await server.import_xml("schemas/UA-Nodeset/Robotics/Opc.Ua.Robotics.NodeSet2.xml")
 
     # starting!
     async with server:
