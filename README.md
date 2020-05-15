@@ -1,3 +1,19 @@
+## My Adaptions
+
+
+Install own package
+```
+pip install git+https://github.com/wmehling/opcua-asyncio.git#egg=asyncua 
+``` 
+
+Upgrade own package
+```
+pip install git+https://github.com/wmehling/opcua-asyncio.git#egg=asyncua --upgrade
+``` 
+
+
+ Debug package : https://dev.to/djbeadle/debugging-a-pip-package-in-visual-studio-code-2if9
+## Default Readme 
 OPC UA / IEC 62541 Client and Server for Python >= 3.6 and pypy .
 http://freeopcua.github.io/, https://github.com/FreeOpcUa/opcua-asyncio
 
