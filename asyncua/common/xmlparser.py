@@ -98,8 +98,10 @@ class XMLParser:
         self.root = None
         # FIXME: hard to get these xml namespaces with ElementTree, we may have to shift to lxml
         self.ns = {
-            'base': "http://opcfoundation.org/UA/2011/03/UANodeSet.xsd",
-            'uax': "http://opcfoundation.org/UA/2008/02/Types.xsd",
+            #'base': "http://opcfoundation.org/UA/2011/03/UANodeSet.xsd",
+            #'uax': "http://opcfoundation.org/UA/2008/02/Types.xsd",
+            'base':"https://raw.githubusercontent.com/OPCFoundation/UA-Nodeset/master/Schema/UANodeSet.xsd",
+            'uax': "https://raw.githubusercontent.com/OPCFoundation/UA-Nodeset/master/Schema/Opc.Ua.Types.xsd",
             'xsd': "http://www.w3.org/2001/XMLSchema",
             'xsi': "http://www.w3.org/2001/XMLSchema-instance"
         }
