@@ -365,4 +365,4 @@ class XMLParser:
             obj.parentlink = "HasComponent"
         if not obj.parent:
             obj.parent, obj.parentlink = parent, parentlink
-            self.logger.info("Could not find parent for node '%s'", obj.nodeid)
+            self.logger.info("For node-iD : {} - Could not find parent with ID {} and reference '{}'.".format(obj.nodeid, obj.parent, obj.parentlink))
